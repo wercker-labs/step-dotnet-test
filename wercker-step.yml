@@ -1,0 +1,15 @@
+name: dotnet-test
+version: 0.0.1
+description: Run your tests with Gallio testrunner.
+keywords:
+  - gallio
+  - unittest
+  - mstest
+  - test
+  - .net
+  - c#
+properties:
+  files:
+    type: string
+
+
