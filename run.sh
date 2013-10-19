@@ -1,4 +1,7 @@
 
+SAVEIFS=$IFS
+IFS=$(echo -en "\n\b")
+
 if [ -n "$WERCKER_DOTNET_TEST_FILES" ]; then
   for FILENAME in $WERCKER_DOTNET_TEST_FILES
   do
@@ -15,5 +18,5 @@ else
   done
 fi
 
-
+IFS=$SAVEIFS
 
