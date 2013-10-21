@@ -1,5 +1,5 @@
 name: dotnet-test
-version: 0.0.3
+version: 0.0.4
 description: Run your tests with Gallio testrunner.
 keywords:
   - gallio
