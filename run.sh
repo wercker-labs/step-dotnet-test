@@ -13,7 +13,7 @@ else
 
   for FILENAME in `find . | grep -i "bin/.*test.*dll$" | sed 's/^\.\///'`
   do
-    echo "/cygdrive/c/Program\ Files/Gallio/bin/Gallio.Echo.exe \"$FILENAME\""
+    echo "/cygdrive/c/Program\ Files/Gallio/bin/Gallio.Echo.exe \"$FILENAME\" /nl /rt:xml-inline /rnf:testreport /rd:$WERCKER_REPORT_ARTIFACTS_DIR"
     /cygdrive/c/Program\ Files/Gallio/bin/Gallio.Echo.exe "$FILENAME" /nl /rt:xml-inline /rnf:testreport /rd:$WERCKER_REPORT_ARTIFACTS_DIR
   done
 fi
